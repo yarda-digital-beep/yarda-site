@@ -47,8 +47,7 @@ python3 -m http.server 8000
 - [ ] Validar os cinco serviços (nomes e escopo).
 - [ ] Escolher o título do hero.
 - [ ] Validar os setores da seção "Para quem é".
-- [ ] Confirmar autorização de uso dos 14 logos de clientes.
-- [ ] Enviar logos de Leone e Galdino Contabilidade e Mahi Patacho (hoje aparecem como texto). Os logos ficam em `assets/img/clientes/`, em versão branca de uma cor só.
+- [ ] Confirmar autorização de uso dos 12 logos de clientes (em `assets/img/clientes/`, versão branca de uma cor só).
 - [ ] Definir se o diagnóstico é gratuito e o prazo de retorno após o formulário (entram na FAQ e na mensagem de sucesso).
 
 **Contato e legal**
