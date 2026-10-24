@@ -2,14 +2,16 @@
 <html lang="pt-BR">
 <head>
   <meta charset="utf-8">
+  <!-- Funciona tanto no GitHub Pages (/yarda-site/) quanto em domínio próprio (/) -->
+  <script>document.write('<base href="' + (location.hostname.endsWith("github.io") ? "/yarda-site/" : "/") + '">');</script>
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Página não encontrada · yarda</title>
   <meta name="robots" content="noindex">
-  <link rel="icon" href="/assets/img/favicon.svg" type="image/svg+xml">
+  <link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400;12..96,600;12..96,700;12..96,800&family=Montserrat:wght@300;400;500;600&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="/assets/css/styles.css">
+  <link rel="stylesheet" href="assets/css/styles.css">
 </head>
 <body>
   <svg width="0" height="0" style="position:absolute" aria-hidden="true" focusable="false">
@@ -21,8 +23,8 @@
 
   <header class="site-header">
     <div class="container header-inner">
-      <a href="/" class="logo" aria-label="yarda, ir para o início">
-        <img src="/assets/img/logo-yarda-horizontal.svg" alt="yarda.ai" width="132" height="36">
+      <a href="./" class="logo" aria-label="yarda, ir para o início">
+        <img src="assets/img/logo-yarda-horizontal.svg" alt="yarda.ai" width="132" height="36">
       </a>
     </div>
   </header>
@@ -34,7 +36,7 @@
       <h1 class="display"><strong>Essa página</strong> não existe.</h1>
       <p class="lead">Mas o gargalo da sua empresa, sim. Vamos voltar para o começo?</p>
       <div class="hero-actions">
-        <a href="/" class="btn btn-primary">Ir para a página inicial</a>
+        <a href="./" class="btn btn-primary">Ir para a página inicial</a>
       </div>
     </div>
   </main>
