@@ -3,7 +3,7 @@
 Site de página única da yarda: tecnologia e IA para pequenas e médias empresas.
 
 - **Copy:** roteiro "Site yarda — Roteiro de copy e seções" e Manual de Identidade Verbal da yarda.
-- **Visual:** Guia de Marca da yarda (cores, tipografia Bricolage Grotesque + Montserrat, traço "Y").
+- **Visual:** Guia de Marca da yarda (cores, tipografia Bricolage Grotesque + Montserrat, traço "Y"), com Noite como cor principal.
 - **Tecnologia:** HTML, CSS e JavaScript puros. Sem etapa de build e sem dependências.
 
 ## Estrutura
@@ -14,7 +14,7 @@ privacidade.html      política de privacidade (versão provisória)
 404.html              página de erro
 assets/css/styles.css estilos e tokens de marca
 assets/js/main.js     menu, WhatsApp e formulário (configuração no topo)
-assets/img/           logo (provisório), favicon
+assets/img/           monograma (Areia, Coral, Noite), traço "Y", favicon
 ```
 
 ## Rodar localmente
@@ -39,8 +39,8 @@ python3 -m http.server 8000
 ## Pendências antes de publicar
 
 **Marca**
-- [ ] Substituir `assets/img/logo-yarda-horizontal.svg` (hoje é um marcador) pelo vetor oficial do logo `yarda.ai`.
-- [ ] Substituir o traço "Y" provisório (símbolo `#y-traco` no `index.html` e no `404.html`, e o `favicon.svg`) pelo vetor oficial.
+- [ ] Monograma `yar/da` e traço "Y" foram vetorizados a partir das imagens enviadas (o arquivo `.ai` chegou corrompido). Para fidelidade total, exportar SVG do Illustrator e substituir `assets/img/monograma-*.svg`, `assets/img/y-traco.svg` e o símbolo `#y-traco` no `index.html` e no `404.html`.
+- [ ] Logo horizontal `yarda.ai` ainda não foi enviado; o cabeçalho usa o monograma.
 - [ ] Confirmar domínio e e-mail oficiais: o guia visual usa `yarda.ai`; o formulário e o rodapé usam `contato@yarda.digital`.
 
 **Conteúdo**
