@@ -14,13 +14,6 @@
   <link rel="stylesheet" href="assets/css/styles.css">
 </head>
 <body>
-  <svg width="0" height="0" style="position:absolute" aria-hidden="true" focusable="false">
-    <symbol id="y-traco" viewBox="0 0 400 520">
-      <path d="M78 44 C 96 150, 150 222, 214 236" fill="none" stroke="currentColor" stroke-width="58" stroke-linecap="round"/>
-      <path d="M338 34 C 322 170, 270 306, 204 392 C 160 450, 104 486, 58 474" fill="none" stroke="currentColor" stroke-width="64" stroke-linecap="round"/>
-    </symbol>
-  </svg>
-
   <header class="site-header">
     <div class="container header-inner">
       <a href="./" class="logo" aria-label="yarda, ir para o início">
@@ -30,7 +23,11 @@
   </header>
 
   <main class="hero" style="min-height: calc(100vh - 72px); display: flex; align-items: center;">
-    <svg class="hero-traco" aria-hidden="true"><use href="#y-traco"/></svg>
+    <!-- traço desenhado direto aqui: com <base>, um <use href="#..."> apontaria para outra página -->
+    <svg class="hero-traco" viewBox="0 0 400 520" aria-hidden="true">
+      <path d="M78 44 C 96 150, 150 222, 214 236" fill="none" stroke="currentColor" stroke-width="58" stroke-linecap="round"/>
+      <path d="M338 34 C 322 170, 270 306, 204 392 C 160 450, 104 486, 58 474" fill="none" stroke="currentColor" stroke-width="64" stroke-linecap="round"/>
+    </svg>
     <div class="container hero-inner">
       <p class="eyebrow eyebrow-dark">Erro 404</p>
       <h1 class="display"><strong>Essa página</strong> não existe.</h1>
