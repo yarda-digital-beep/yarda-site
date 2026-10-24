@@ -1,0 +1,21 @@
+  <a class="skip-link" href="#conteudo">Pular para o conteúdo</a>
+
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="{{ '/' | relative_url }}" class="logo" aria-label="yarda, ir para o início">
+        <img src="{{ '/assets/img/monograma-areia.svg' | relative_url }}" alt="yarda" width="46" height="44">
+      </a>
+      <button class="menu-toggle" aria-expanded="false" aria-controls="menu" aria-label="Abrir menu">
+        <span></span><span></span><span></span>
+      </button>
+      <nav class="menu" id="menu" aria-label="Menu principal">
+        <a href="{{ '/#servicos' | relative_url }}">Serviços</a>
+        <a href="{{ '/#como-funciona' | relative_url }}">Como funciona</a>
+        <a href="{{ '/#sobre' | relative_url }}">Sobre</a>
+        <a href="{{ '/blog/' | relative_url }}"{% if page.url contains '/blog/' %} aria-current="page"{% endif %}>Blog</a>
+        <a href="{{ '/glossario/' | relative_url }}"{% if page.url contains '/glossario/' %} aria-current="page"{% endif %}>Glossário</a>
+        <a href="{{ '/#duvidas' | relative_url }}">Dúvidas</a>
+      </nav>
+      <a href="{{ '/#contato' | relative_url }}" class="btn btn-primary btn-header"><span class="label-long">Agendar diagnóstico</span><span class="label-short">Agendar</span></a>
+    </div>
+  </header>

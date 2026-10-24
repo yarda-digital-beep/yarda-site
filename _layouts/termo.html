@@ -1,0 +1,85 @@
+---
+layout: blog-base
+---
+{%- assign area = site.data.glossario_areas | where: "slug", page.area | first -%}
+{%- assign url_completa = page.url | absolute_url -%}
+
+    <article class="post termo">
+      <header class="post-header">
+        <div class="container post-header-inner">
+          <nav class="breadcrumb" aria-label="Você está em">
+            <a href="{{ '/' | relative_url }}">Início</a><span aria-hidden="true">/</span><a href="{{ '/glossario/' | relative_url }}">Glossário</a><span aria-hidden="true">/</span><span aria-current="page">{{ page.termo }}</span>
+          </nav>
+          {% if area %}<a class="tag" href="{{ '/glossario/?area=' | append: area.slug | relative_url }}">{{ area.nome }}</a>{% endif %}
+          <h1 class="post-title">{% if page.h1 %}{{ page.h1 }}{% else %}O que é {{ page.termo }}{% endif %}{% if page.nome_completo %} <span class="termo-nome-completo">({{ page.nome_completo }})</span>{% endif %}</h1>
+          <p class="termo-definicao">{{ page.resumo }}</p>
+          {% if page.last_modified_at %}<div class="post-meta"><span>Atualizado em <time datetime="{{ page.last_modified_at | date_to_xmlschema }}">{% include data-pt.html data=page.last_modified_at %}</time></span></div>{% endif %}
+        </div>
+      </header>
+
+      <div class="container post-layout">
+        <aside class="post-aside">
+          {% if page.relacionados %}
+          <nav class="toc termo-relacionados" aria-labelledby="relacionados-titulo">
+            <p class="toc-titulo" id="relacionados-titulo">Termos relacionados</p>
+            <ul>
+              {% for slug in page.relacionados %}
+                {%- assign rel = site.glossario | where_exp: "t", "t.slug == slug" | first -%}
+                {% if rel %}<li><a href="{{ rel.url | relative_url }}">{{ rel.termo }}</a></li>{% endif %}
+              {% endfor %}
+            </ul>
+          </nav>
+          {% endif %}
+          <div class="post-aside-cta">
+            <p>Quer aplicar isso na sua empresa?</p>
+            <a href="{{ '/#contato' | relative_url }}" class="btn btn-primary btn-block">Agendar diagnóstico</a>
+          </div>
+        </aside>
+
+        <div class="post-body">
+          <div class="prose">
+{{ content }}
+          </div>
+
+          {%- assign artigos = site.posts | where: "categoria", area.categoria_blog -%}
+          {% if page.artigos %}{%- assign artigos = site.posts | where_exp: "p", "page.artigos contains p.slug" -%}{% endif %}
+          {% if artigos.size > 0 %}
+          <section class="termo-artigos" aria-labelledby="artigos-titulo">
+            <h2 id="artigos-titulo">Para se aprofundar</h2>
+            <ul>
+              {% for p in artigos limit:3 %}<li><a href="{{ p.url | relative_url }}">{{ p.title }}</a></li>{% endfor %}
+            </ul>
+          </section>
+          {% endif %}
+
+          <p class="termo-voltar"><a href="{{ '/glossario/' | relative_url }}">← Ver todos os termos do glossário</a></p>
+        </div>
+      </div>
+    </article>
+
+{% include blog-cta.html %}
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "DefinedTerm",
+  "@id": "{{ url_completa }}",
+  "name": {{ page.termo | jsonify }},
+  {% if page.nome_completo %}"alternateName": {{ page.nome_completo | jsonify }},{% endif %}
+  "description": {{ page.resumo | jsonify }},
+  "url": "{{ url_completa }}",
+  "inLanguage": "pt-BR",
+  "inDefinedTermSet": { "@type": "DefinedTermSet", "@id": "{{ '/glossario/' | absolute_url }}", "name": "Glossário da yarda" }
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    { "@type": "ListItem", "position": 1, "name": "Início", "item": "{{ '/' | absolute_url }}" },
+    { "@type": "ListItem", "position": 2, "name": "Glossário", "item": "{{ '/glossario/' | absolute_url }}" },
+    { "@type": "ListItem", "position": 3, "name": {{ page.termo | jsonify }}, "item": "{{ url_completa }}" }
+  ]
+}
+</script>

@@ -1,0 +1,19 @@
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#221D35">
+  <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large">
+  {%- capture seo_tags %}{% seo %}{% endcapture -%}
+  {%- if page.layout == "post" or page.layout == "termo" -%}
+  {%- comment -%} Artigos e termos usam o JSON-LD próprio do layout (o do plugin põe o autor como editora). {%- endcomment -%}
+  {{ seo_tags | split: '<script type="application/ld+json">' | first }}
+  {%- else -%}
+  {{ seo_tags }}
+  {%- endif %}
+  {% feed_meta %}
+  <link rel="icon" href="{{ '/assets/img/favicon.svg' | relative_url }}" type="image/svg+xml">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400;12..96,600;12..96,700;12..96,800&family=Montserrat:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="{{ '/assets/css/styles.css?v=4' | relative_url }}">
+  <link rel="stylesheet" href="{{ '/assets/css/blog.css?v=1' | relative_url }}">

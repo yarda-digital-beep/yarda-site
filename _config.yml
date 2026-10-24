@@ -1,0 +1,69 @@
+# =========================================================
+# yarda · configuração do Jekyll (GitHub Pages)
+# O GitHub Pages monta o site sozinho a cada push na main.
+# =========================================================
+
+title: yarda
+description: A yarda resolve os gargalos de pequenas e médias empresas com tecnologia e IA, aplicadas por quem entende de vendas e gestão.
+url: https://yarda.digital
+baseurl: ""
+lang: pt_BR
+timezone: America/Sao_Paulo
+
+# Dados usados pelo jekyll-seo-tag (title, description, Open Graph, Schema.org)
+logo: /assets/img/yarda-logo-schema.png
+image: /assets/img/blog/og-padrao.png
+social:
+  name: yarda
+  links: []        # [INSERIR] URLs do LinkedIn e do Instagram da yarda
+
+# Blog
+permalink: /blog/:title/
+paginate: 12
+paginate_path: /blog/pagina/:num/
+
+# Glossário: cada termo é um arquivo em _glossario/<slug>.md
+collections:
+  glossario:
+    output: true
+    permalink: /glossario/:name/
+
+defaults:
+  - scope: { path: "", type: posts }
+    values:
+      layout: post
+      author: equipe-yarda
+  - scope: { path: "", type: glossario }
+    values:
+      layout: termo
+      author: equipe-yarda
+  - scope: { path: "blog/categoria" }
+    values:
+      layout: categoria
+
+markdown: kramdown
+kramdown:
+  input: GFM
+  auto_ids: true
+  transliterated_header_ids: true
+  hard_wrap: false
+
+plugins:
+  - jekyll-seo-tag
+  - jekyll-sitemap
+  - jekyll-feed
+  - jekyll-paginate
+
+feed:
+  path: blog/feed.xml
+
+# Arquivos internos que não viram página do site
+exclude:
+  - docs
+  - CLAUDE.md
+  - README.md
+  - Gemfile
+  - Gemfile.lock
+  - vendor
+  - .bundle
+  - .claude

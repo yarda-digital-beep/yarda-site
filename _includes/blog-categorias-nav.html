@@ -1,0 +1,11 @@
+    <nav class="blog-cats" aria-label="Assuntos do blog">
+      <div class="container">
+        <p class="blog-cats-label">Navegue por assunto</p>
+        <ul>
+          <li><a href="{{ '/blog/' | relative_url }}"{% unless page.categoria %} aria-current="page"{% endunless %}>Todos</a></li>
+          {% for cat in site.data.categorias %}
+          <li><a href="{{ '/blog/categoria/' | append: cat.slug | append: '/' | relative_url }}"{% if page.categoria == cat.slug %} aria-current="page"{% endif %}>{{ cat.nome }}</a></li>
+          {% endfor %}
+        </ul>
+      </div>
+    </nav>

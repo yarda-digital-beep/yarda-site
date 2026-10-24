@@ -1,0 +1,11 @@
+# Autores do blog. Artigo sem "author:" usa equipe-yarda.
+# Os campos name, picture e uri também alimentam os dados estruturados (Schema.org).
+# Para dar mais autoridade aos artigos (E-E-A-T do Google), cadastre pessoas reais
+# com nome, cargo, foto e link do LinkedIn, e use "author: <chave>" no artigo.
+equipe-yarda:
+  name: Equipe yarda
+  tipo: Organization   # pessoas reais: Person
+  cargo: Tecnologia e IA para PMEs
+  bio: A yarda resolve os gargalos de pequenas e médias empresas com tecnologia e IA, aplicadas por quem entende de vendas e gestão.
+  picture: /assets/img/monograma-coral.svg
+  uri: https://yarda.digital/

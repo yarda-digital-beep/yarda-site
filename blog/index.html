@@ -1,0 +1,52 @@
+---
+layout: blog-base
+title: "Blog: tecnologia, IA e gestão para PMEs"
+description: "Artigos práticos sobre atendimento com IA, automação de processos, vendas, CRM e gestão para pequenas e médias empresas crescerem."
+---
+{%- assign posts = paginator.posts -%}
+
+    <section class="blog-hero">
+      <div class="container">
+        <nav class="breadcrumb" aria-label="Você está em">
+          <a href="{{ '/' | relative_url }}">Início</a><span aria-hidden="true">/</span><span aria-current="page">Blog</span>
+        </nav>
+        <p class="eyebrow">Blog da yarda</p>
+        <h1 class="display"><strong>Gargalos resolvidos</strong> na prática.</h1>
+        <p class="lead">Conteúdo direto sobre tecnologia, IA e gestão para pequenas e médias empresas crescerem com menos esforço.</p>
+      </div>
+    </section>
+
+{% include blog-categorias-nav.html %}
+
+    <section class="section section-claro">
+      <div class="container">
+        {% if posts.size == 0 %}
+        <p class="blog-vazio">Os primeiros artigos chegam em breve.</p>
+        {% else %}
+          {% if paginator.page == 1 %}
+            {% assign primeiro = posts.first %}{% include card-post.html post=primeiro destaque="sim" %}
+            {% if posts.size > 1 %}
+            <h2 class="section-title blog-ultimos">Últimos artigos</h2>
+            <div class="post-grid">
+              {% for p in posts offset:1 %}{% include card-post.html post=p %}{% endfor %}
+            </div>
+            {% endif %}
+          {% else %}
+            <h2 class="section-title blog-ultimos">Artigos · página {{ paginator.page }}</h2>
+            <div class="post-grid">
+              {% for p in posts %}{% include card-post.html post=p %}{% endfor %}
+            </div>
+          {% endif %}
+
+          {% if paginator.total_pages > 1 %}
+          <nav class="paginacao" aria-label="Páginas do blog">
+            {% if paginator.previous_page %}<a rel="prev" href="{{ paginator.previous_page_path | relative_url }}">← Mais recentes</a>{% endif %}
+            <span>Página {{ paginator.page }} de {{ paginator.total_pages }}</span>
+            {% if paginator.next_page %}<a rel="next" href="{{ paginator.next_page_path | relative_url }}">Mais antigos →</a>{% endif %}
+          </nav>
+          {% endif %}
+        {% endif %}
+      </div>
+    </section>
+
+{% include blog-cta.html %}

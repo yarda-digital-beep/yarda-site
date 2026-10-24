@@ -1,0 +1,16 @@
+# Áreas do glossário. "categoria_blog" liga o termo aos artigos do blog sobre o mesmo assunto.
+- slug: negocios
+  nome: Negócios
+  categoria_blog: gestao-e-indicadores
+- slug: vendas
+  nome: Vendas
+  categoria_blog: vendas-e-crm
+- slug: operacoes
+  nome: Operações
+  categoria_blog: processos-e-automacao
+- slug: ia
+  nome: IA
+  categoria_blog: atendimento-e-ia
+- slug: tecnologia
+  nome: Tecnologia
+  categoria_blog: processos-e-automacao

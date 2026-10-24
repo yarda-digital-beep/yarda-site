@@ -1,0 +1,44 @@
+---
+layout: blog-base
+---
+{%- assign cat = site.data.categorias | where: "slug", page.categoria | first -%}
+{%- assign posts = site.posts | where: "categoria", page.categoria -%}
+
+    <section class="blog-hero">
+      <div class="container">
+        <nav class="breadcrumb" aria-label="Você está em">
+          <a href="{{ '/' | relative_url }}">Início</a><span aria-hidden="true">/</span><a href="{{ '/blog/' | relative_url }}">Blog</a><span aria-hidden="true">/</span><span aria-current="page">{{ cat.nome }}</span>
+        </nav>
+        <p class="eyebrow">Blog da yarda</p>
+        <h1 class="display">{{ cat.nome }}</h1>
+        <p class="lead">{{ cat.descricao }}</p>
+      </div>
+    </section>
+
+{% include blog-categorias-nav.html %}
+
+    <section class="section section-claro">
+      <div class="container">
+        {% if posts.size == 0 %}
+        <p class="blog-vazio">Ainda não há artigos sobre {{ cat.nome | downcase }}. <a href="{{ '/blog/' | relative_url }}">Ver todos os artigos</a>.</p>
+        {% else %}
+        <div class="post-grid">
+          {% for p in posts %}{% include card-post.html post=p %}{% endfor %}
+        </div>
+        {% endif %}
+      </div>
+    </section>
+
+{% include blog-cta.html %}
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    { "@type": "ListItem", "position": 1, "name": "Início", "item": "{{ '/' | absolute_url }}" },
+    { "@type": "ListItem", "position": 2, "name": "Blog", "item": "{{ '/blog/' | absolute_url }}" },
+    { "@type": "ListItem", "position": 3, "name": {{ cat.nome | jsonify }}, "item": "{{ page.url | absolute_url }}" }
+  ]
+}
+</script>

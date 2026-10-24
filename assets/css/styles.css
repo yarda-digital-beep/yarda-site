@@ -182,6 +182,7 @@ ul, ol { margin: 0; padding: 0; list-style: none; }
 .menu { display: flex; gap: 28px; margin-left: auto; }
 .menu a {
   font: 500 15px var(--font-text);
+  white-space: nowrap;
   text-decoration: none;
   color: var(--yarda-areia);
 }
@@ -198,7 +199,7 @@ ul, ol { margin: 0; padding: 0; list-style: none; }
 }
 .menu-toggle span { display: block; height: 2px; background: var(--yarda-areia); border-radius: 2px; }
 
-@media (max-width: 960px) {
+@media (max-width: 1120px) {
   .menu-toggle { display: flex; }
   .menu {
     display: none;

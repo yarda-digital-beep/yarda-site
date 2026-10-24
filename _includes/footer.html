@@ -1,0 +1,33 @@
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div class="footer-brand">
+        <img src="{{ '/assets/img/monograma-coral.svg' | relative_url }}" alt="yarda" width="70" height="67" loading="lazy">
+        <p>Tecnologia e IA para PMEs crescerem com inteligência.</p>
+      </div>
+      <nav class="footer-nav" aria-label="Rodapé">
+        <h3>Blog</h3>
+        {% for cat in site.data.categorias %}
+        <a href="{{ '/blog/categoria/' | append: cat.slug | append: '/' | relative_url }}">{{ cat.nome }}</a>
+        {% endfor %}
+        <a href="{{ '/glossario/' | relative_url }}">Glossário</a>
+      </nav>
+      <div class="footer-contact">
+        <h3>Contato</h3>
+        <a href="mailto:contato@yarda.digital">contato@yarda.digital</a>
+        <a data-whatsapp-link data-whatsapp-block href="#">WhatsApp</a>
+        <a href="{{ '/#contato' | relative_url }}">Agendar diagnóstico</a>
+        <p>Atendimento 100% online, para todo o Brasil.</p>
+      </div>
+    </div>
+    <div class="container footer-bottom">
+      <p>© {{ site.time | date: '%Y' }} yarda. Todos os direitos reservados. · <a href="{{ '/privacidade.html' | relative_url }}">Política de Privacidade</a> · <a href="{{ '/blog/feed.xml' | relative_url }}">RSS</a></p>
+      <svg class="footer-traco" aria-hidden="true"><use href="#y-traco"/></svg>
+    </div>
+  </footer>
+
+  <a class="whatsapp-float" data-whatsapp-link data-whatsapp-block href="#" aria-label="Fale com a yarda pelo WhatsApp" title="Fale com a yarda">
+    <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3a9 9 0 0 0-7.8 13.5L3 21l4.6-1.2A9 9 0 1 0 12 3z" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/><path d="M9 8.5c0 3.5 3 6.5 6.5 6.5l1-1.6-2-1-1 .9c-1-.4-2.4-1.8-2.8-2.8l.9-1-1-2z" fill="currentColor"/></svg>
+  </a>
+
+  <script src="{{ '/assets/js/main.js?v=2' | relative_url }}" defer></script>
+  <script src="{{ '/assets/js/blog.js?v=1' | relative_url }}" defer></script>

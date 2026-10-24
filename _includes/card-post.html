@@ -1,0 +1,15 @@
+{%- assign p = include.post -%}
+{%- assign cat = site.data.categorias | where: "slug", p.categoria | first -%}
+<article class="post-card{% if include.destaque %} post-card-destaque{% endif %}">
+  <a class="post-card-img" href="{{ p.url | relative_url }}" tabindex="-1" aria-hidden="true">
+    {% if p.image.path %}<img src="{{ p.image.path | relative_url }}" alt="" width="1200" height="630" loading="{% if include.destaque %}eager{% else %}lazy{% endif %}">
+    {% else %}<span class="post-card-placeholder"><svg aria-hidden="true"><use href="#y-traco"/></svg></span>{% endif %}
+  </a>
+  <div class="post-card-body">
+    {% if cat %}<a class="tag" href="{{ '/blog/categoria/' | append: cat.slug | append: '/' | relative_url }}">{{ cat.nome }}</a>{% endif %}
+    {% if include.destaque %}<h2 class="post-card-title"><a href="{{ p.url | relative_url }}">{{ p.title }}</a></h2>
+    {% else %}<h3 class="post-card-title"><a href="{{ p.url | relative_url }}">{{ p.title }}</a></h3>{% endif %}
+    <p class="post-card-desc">{{ p.description }}</p>
+    <p class="post-meta"><time datetime="{{ p.date | date_to_xmlschema }}">{% include data-pt.html data=p.date %}</time> · {{ p.content | number_of_words | divided_by: 200 | plus: 1 }} min de leitura</p>
+  </div>
+</article>

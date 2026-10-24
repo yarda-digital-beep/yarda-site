@@ -1,0 +1,80 @@
+---
+layout: blog-base
+title: "Glossário de negócios, vendas, operações, IA e tecnologia"
+description: "O que significa CRM, KPI, API, agente de IA, SLA e outros termos. Definições diretas e exemplos práticos para quem toca uma pequena ou média empresa."
+---
+{%- assign termos = site.glossario | sort_natural: "termo" -%}
+{%- assign letras = "" -%}
+{%- for t in termos -%}
+  {%- assign l = t.termo | slice: 0 | upcase -%}
+  {%- unless letras contains l -%}{%- assign letras = letras | append: l -%}{%- endunless -%}
+{%- endfor -%}
+{%- assign todas = "0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZ" | split: "" -%}
+
+    <section class="blog-hero">
+      <div class="container">
+        <nav class="breadcrumb" aria-label="Você está em">
+          <a href="{{ '/' | relative_url }}">Início</a><span aria-hidden="true">/</span><span aria-current="page">Glossário</span>
+        </nav>
+        <p class="eyebrow">Glossário da yarda</p>
+        <h1 class="display"><strong>Termos de negócio</strong> sem complicação.</h1>
+        <p class="lead">Negócios, vendas, operações, IA e tecnologia explicados de forma direta, com exemplos de como cada conceito funciona numa pequena ou média empresa.</p>
+      </div>
+    </section>
+
+    <section class="glossario-filtros" aria-label="Filtrar termos">
+      <div class="container">
+        <label class="glossario-busca">
+          <span class="visually-hidden">Buscar termo</span>
+          <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="11" cy="11" r="7" fill="none" stroke="currentColor" stroke-width="2"/><path d="M20 20l-4-4" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+          <input type="search" id="glossario-busca" placeholder="Buscar termo, ex.: CRM" autocomplete="off">
+        </label>
+        <ul class="glossario-areas" aria-label="Áreas">
+          <li><button type="button" data-area="" aria-pressed="true">Todas</button></li>
+          {% for a in site.data.glossario_areas %}<li><button type="button" data-area="{{ a.slug }}" aria-pressed="false">{{ a.nome }}</button></li>{% endfor %}
+        </ul>
+        <nav class="glossario-letras" aria-label="Ir para a letra">
+          {% for l in todas %}{% if letras contains l %}<a href="#letra-{{ l }}">{{ l }}</a>{% endif %}{% endfor %}
+        </nav>
+      </div>
+    </section>
+
+    <section class="section section-claro">
+      <div class="container">
+        <p class="glossario-contagem" aria-live="polite"><span data-contagem>{{ termos.size }}</span> termos</p>
+        {% for l in todas %}{% if letras contains l %}
+        <div class="glossario-grupo" id="letra-{{ l }}">
+          <h2 class="glossario-letra">{{ l }}</h2>
+          <ul class="glossario-lista">
+            {% for t in termos %}{% assign tl = t.termo | slice: 0 | upcase %}{% if tl == l %}
+            {%- assign area = site.data.glossario_areas | where: "slug", t.area | first -%}
+            <li data-area="{{ t.area }}" data-busca="{{ t.termo | downcase }} {{ t.nome_completo | downcase }} {{ t.sinonimos | join: ' ' | downcase }}">
+              <a href="{{ t.url | relative_url }}">
+                <span class="glossario-termo">{{ t.termo }}</span>
+                <span class="glossario-area">{{ area.nome }}</span>
+                <span class="glossario-resumo">{{ t.resumo | truncate: 140 }}</span>
+              </a>
+            </li>
+            {% endif %}{% endfor %}
+          </ul>
+        </div>
+        {% endif %}{% endfor %}
+        <p class="glossario-vazio" hidden>Nenhum termo encontrado. Tente outra palavra ou <a href="{{ '/#contato' | relative_url }}">fale com a yarda</a>.</p>
+      </div>
+    </section>
+
+{% include blog-cta.html %}
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "DefinedTermSet",
+  "@id": "{{ page.url | absolute_url }}",
+  "name": "Glossário da yarda",
+  "description": {{ page.description | jsonify }},
+  "inLanguage": "pt-BR",
+  "hasDefinedTerm": [{% for t in termos %}
+    { "@type": "DefinedTerm", "name": {{ t.termo | jsonify }}, "url": "{{ t.url | absolute_url }}" }{% unless forloop.last %},{% endunless %}{% endfor %}
+  ]
+}
+</script>

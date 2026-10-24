@@ -1,0 +1,17 @@
+# Categorias do blog. Cada uma tem uma página em blog/categoria/<slug>/index.html
+# e leva para o serviço da yarda que resolve aquele tipo de gargalo.
+- slug: atendimento-e-ia
+  nome: Atendimento e IA
+  descricao: "Como usar inteligência artificial no atendimento para responder mais rápido sem perder o cuidado com o cliente."
+- slug: processos-e-automacao
+  nome: Processos e automação
+  descricao: "Como tirar tarefas repetitivas da mão da equipe e deixar a operação rodar com menos retrabalho."
+- slug: vendas-e-crm
+  nome: Vendas e CRM
+  descricao: "Como organizar o comercial, acompanhar cada oportunidade e vender com previsibilidade."
+- slug: gestao-e-indicadores
+  nome: Gestão e indicadores
+  descricao: "Como acompanhar os números certos e tomar decisão com dado, não com achismo."
+- slug: crescimento
+  nome: Crescimento
+  descricao: "Mentalidade de growth na prática para pequenas e médias empresas: testar, medir, ajustar e crescer."
