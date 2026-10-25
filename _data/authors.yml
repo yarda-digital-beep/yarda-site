@@ -6,6 +6,6 @@ equipe-yarda:
   name: Equipe yarda
   tipo: Organization   # pessoas reais: Person
   cargo: Crescimento com tecnologia e IA para PMEs
-  bio: A yarda encontra o gargalo que mais pesa na sua PME e constrói o que resolve: site, atendimento com IA, automação, CRM ou painel.
+  bio: "A yarda encontra o gargalo que mais pesa na sua PME e constrói o que resolve: site, atendimento com IA, automação, CRM ou painel."
   picture: /assets/img/monograma-coral.svg
   uri: https://yarda.digital/
