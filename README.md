@@ -46,6 +46,14 @@ Com Ruby 3.2 ou mais novo, o Jekyll 3.9 do GitHub Pages precisa de um ajuste de 
 - Use `##` para as seções principais (elas viram o sumário) e `###` para subseções.
 - Blocos especiais no Markdown: escreva o parágrafo e, na linha de baixo, `{: .destaque}` ou `{: .cta-inline}`.
 
+### Posts agendados
+
+- Para agendar, basta dar ao post uma data futura (no nome do arquivo e no campo `date`, sempre às `08:00:00 -0300`). O Jekyll do GitHub Pages não publica posts com data futura, então ele fica fora do site, do feed e do sitemap até o dia certo.
+- O workflow `.github/workflows/publicar-posts-agendados.yml` roda de segunda a sexta às 8h15 (Brasília). Se existir um post com a data do dia, ele pede um novo build do GitHub Pages e o post entra no ar.
+- Para publicar na hora (ou num sábado ou domingo), abra a aba **Actions → Publicar posts agendados → Run workflow** e marque "Pedir o build mesmo sem post com a data de hoje".
+- Calendário editorial: um post de cada linha por semana (Gargalos na prática, IA na prática e Gestão na prática), nunca dois no mesmo dia.
+- O GitHub desliga workflows agendados de repositórios públicos depois de 60 dias sem nenhum commit. Se isso acontecer, a aba Actions mostra um aviso com o botão para reativar.
+
 ## Glossário
 
 - Cada termo é um arquivo em `_glossario/slug.md`. O endereço fica `/glossario/slug/`.
