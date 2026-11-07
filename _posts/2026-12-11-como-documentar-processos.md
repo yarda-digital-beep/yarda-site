@@ -1,7 +1,7 @@
 ---
 title: "Como documentar processos para não depender de uma pessoa"
 description: "Um passo a passo para documentar os processos da sua empresa de um jeito simples, que a equipe usa de verdade e que reduz a dependência de pessoas-chave."
-date: 2026-12-04 08:00:00 -0300
+date: 2026-12-11 08:00:00 -0300
 categoria: processos-e-automacao
 image:
   path: /assets/img/blog/capa-processos-e-automacao.png

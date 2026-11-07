@@ -1,7 +1,7 @@
 ---
 title: "Orçamento sem follow-up: quanto custa a venda que esfria"
 description: "Orçamento enviado e nunca retomado é venda perdida em silêncio. Veja como calcular quanto isso custa na sua empresa e como parar de perder."
-date: 2026-11-03 08:00:00 -0300
+date: 2026-11-09 08:00:00 -0300
 categoria: vendas-e-crm
 image:
   path: /assets/img/blog/capa-vendas-e-crm.png

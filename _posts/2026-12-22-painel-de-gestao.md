@@ -1,7 +1,7 @@
 ---
 title: "Painel de gestão: o que colocar e o que deixar de fora"
 description: "Como montar um painel de gestão útil para a sua PME: quais números colocar, o que deixar de fora e como organizar para decidir em poucos minutos."
-date: 2026-12-18 08:00:00 -0300
+date: 2026-12-22 08:00:00 -0300
 categoria: gestao-e-indicadores
 image:
   path: /assets/img/blog/capa-gestao-e-indicadores.png

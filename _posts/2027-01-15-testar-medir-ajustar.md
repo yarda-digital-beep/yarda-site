@@ -1,7 +1,7 @@
 ---
 title: "Testar, medir e ajustar: crescer sem time de marketing"
 description: "A mentalidade de crescimento aplicada a PMEs: como testar ideias pequenas, medir o resultado e ajustar rápido, mesmo sem um time de marketing."
-date: 2027-01-08 08:00:00 -0300
+date: 2027-01-15 08:00:00 -0300
 categoria: crescimento
 image:
   path: /assets/img/blog/capa-crescimento.png

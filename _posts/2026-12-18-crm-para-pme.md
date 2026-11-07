@@ -1,7 +1,7 @@
 ---
 title: "CRM para PME: como escolher e fazer a equipe usar"
 description: "Como escolher um CRM para a sua pequena ou média empresa e, principalmente, como fazer a equipe usar de verdade depois da implantação."
-date: 2026-12-11 08:00:00 -0300
+date: 2026-12-18 08:00:00 -0300
 categoria: vendas-e-crm
 image:
   path: /assets/img/blog/capa-vendas-e-crm.png

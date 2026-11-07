@@ -1,7 +1,7 @@
 ---
 title: "Reunião semanal de resultados em 30 minutos: roteiro"
 description: "Um roteiro de reunião semanal de resultados para PMEs: 30 minutos, pauta fixa, indicadores na tela e decisões com responsável e prazo."
-date: 2026-12-22 08:00:00 -0300
+date: 2026-12-29 08:00:00 -0300
 categoria: gestao-e-indicadores
 image:
   path: /assets/img/blog/capa-gestao-e-indicadores.png

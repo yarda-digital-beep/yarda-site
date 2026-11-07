@@ -1,7 +1,7 @@
 ---
 title: "Como calcular o custo de um gargalo em 15 minutos"
 description: "Um método simples para descobrir quanto um gargalo custa por mês na sua empresa, com fórmula, exemplo e o que fazer depois de ter o número."
-date: 2026-11-09 08:00:00 -0300
+date: 2026-11-16 08:00:00 -0300
 categoria: crescimento
 image:
   path: /assets/img/blog/capa-crescimento.png

@@ -1,7 +1,7 @@
 ---
 title: "Automação simples ou com IA: quando usar cada uma"
 description: "Nem todo processo precisa de inteligência artificial. Entenda a diferença entre automação simples e automação com IA e saiba quando cada uma faz sentido."
-date: 2026-12-09 08:00:00 -0300
+date: 2026-12-16 08:00:00 -0300
 categoria: processos-e-automacao
 image:
   path: /assets/img/blog/capa-processos-e-automacao.png

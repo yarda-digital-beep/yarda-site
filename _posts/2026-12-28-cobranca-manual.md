@@ -1,7 +1,7 @@
 ---
 title: "Cobrança manual: o gargalo que atrasa o seu caixa"
 description: "Lembrete esquecido e cobrança feita à mão atrasam o caixa e aumentam a inadimplência. Veja como organizar e automatizar a cobrança da sua empresa."
-date: 2026-12-21 08:00:00 -0300
+date: 2026-12-28 08:00:00 -0300
 categoria: processos-e-automacao
 image:
   path: /assets/img/blog/capa-processos-e-automacao.png

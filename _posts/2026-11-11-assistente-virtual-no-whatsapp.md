@@ -1,7 +1,7 @@
 ---
 title: "Assistente virtual no WhatsApp: o que ele resolve"
 description: "Veja o que um assistente virtual com IA resolve no WhatsApp da sua empresa, o que ele não deve fazer e quando a conversa precisa passar para uma pessoa."
-date: 2026-11-04 08:00:00 -0300
+date: 2026-11-11 08:00:00 -0300
 categoria: atendimento-e-ia
 image:
   path: /assets/img/blog/capa-atendimento-e-ia.png

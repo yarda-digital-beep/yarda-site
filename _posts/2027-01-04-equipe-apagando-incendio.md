@@ -1,7 +1,7 @@
 ---
 title: "Equipe apagando incêndio: por onde começar a mudar"
 description: "Quando tudo é urgente, nada melhora. Veja como sair do modo apagar incêndio na sua PME, descobrir de onde vêm as urgências e criar espaço para resolver a causa."
-date: 2026-12-28 08:00:00 -0300
+date: 2027-01-04 08:00:00 -0300
 categoria: crescimento
 image:
   path: /assets/img/blog/capa-crescimento.png

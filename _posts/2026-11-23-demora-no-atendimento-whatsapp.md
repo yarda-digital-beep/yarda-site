@@ -1,7 +1,7 @@
 ---
 title: "Demora para responder no WhatsApp: o que ela custa"
 description: "Cliente esperando resposta no WhatsApp é venda indo para o concorrente. Veja como medir o seu tempo de resposta e reduzir a espera sem contratar mais gente."
-date: 2026-11-16 08:00:00 -0300
+date: 2026-11-23 08:00:00 -0300
 categoria: atendimento-e-ia
 image:
   path: /assets/img/blog/capa-atendimento-e-ia.png

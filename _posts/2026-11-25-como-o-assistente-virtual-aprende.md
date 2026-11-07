@@ -1,7 +1,7 @@
 ---
 title: "Como um assistente virtual aprende sobre a sua empresa"
 description: "Entenda, sem jargão, como um assistente virtual com IA aprende as informações da sua empresa, por que ele pode errar e como montar uma boa base de conhecimento."
-date: 2026-11-18 08:00:00 -0300
+date: 2026-11-25 08:00:00 -0300
 categoria: atendimento-e-ia
 image:
   path: /assets/img/blog/capa-atendimento-e-ia.png

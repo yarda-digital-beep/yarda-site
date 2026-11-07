@@ -1,7 +1,7 @@
 ---
 title: "Metas comerciais: como definir a partir do que você vende"
 description: "Como definir metas comerciais realistas para a sua PME usando o histórico de vendas, a taxa de conversão e a capacidade da equipe, com um exemplo passo a passo."
-date: 2026-12-29 08:00:00 -0300
+date: 2027-01-08 08:00:00 -0300
 categoria: vendas-e-crm
 image:
   path: /assets/img/blog/capa-vendas-e-crm.png

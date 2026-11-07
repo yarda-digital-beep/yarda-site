@@ -1,7 +1,7 @@
 ---
 title: "Como priorizar gargalos: matriz de impacto e esforço"
 description: "Muitos problemas e pouco tempo? Use a matriz de impacto e esforço para decidir qual gargalo da sua empresa resolver primeiro, com um passo a passo."
-date: 2026-11-13 08:00:00 -0300
+date: 2026-11-19 08:00:00 -0300
 categoria: crescimento
 image:
   path: /assets/img/blog/capa-crescimento.png

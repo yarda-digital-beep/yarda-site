@@ -1,7 +1,7 @@
 ---
 title: "Proposta comercial manual: quanto custa e como automatizar"
 description: "Montar proposta comercial à mão toma horas, gera erro e atrasa a venda. Veja como medir esse custo e automatizar o processo em cinco passos."
-date: 2026-11-23 08:00:00 -0300
+date: 2026-11-30 08:00:00 -0300
 categoria: processos-e-automacao
 image:
   path: /assets/img/blog/capa-processos-e-automacao.png

@@ -1,7 +1,7 @@
 ---
 title: "Seis perguntas para fazer antes de contratar IA"
 description: "Antes de contratar uma solução de inteligência artificial para a sua empresa, faça estas seis perguntas. Elas evitam gasto com a ferramenta errada."
-date: 2026-12-02 08:00:00 -0300
+date: 2026-12-09 08:00:00 -0300
 categoria: crescimento
 image:
   path: /assets/img/blog/capa-crescimento.png

@@ -1,7 +1,7 @@
 ---
 title: "Processo comercial: como desenhar o da sua empresa"
 description: "Do primeiro contato ao fechamento: um passo a passo para desenhar o processo comercial da sua PME, com etapas, critérios de avanço e indicadores."
-date: 2026-11-27 08:00:00 -0300
+date: 2026-12-04 08:00:00 -0300
 categoria: vendas-e-crm
 image:
   path: /assets/img/blog/capa-vendas-e-crm.png

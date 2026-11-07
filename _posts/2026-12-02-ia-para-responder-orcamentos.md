@@ -1,7 +1,7 @@
 ---
 title: "Como usar IA para responder orçamentos mais rápido"
 description: "Veja em que etapas a inteligência artificial ajuda a responder pedidos de orçamento mais rápido, o que continua com o vendedor e como começar."
-date: 2026-11-25 08:00:00 -0300
+date: 2026-12-02 08:00:00 -0300
 categoria: vendas-e-crm
 image:
   path: /assets/img/blog/capa-vendas-e-crm.png

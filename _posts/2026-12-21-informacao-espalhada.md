@@ -1,7 +1,7 @@
 ---
 title: "Informação espalhada: o custo de não saber como está o mês"
 description: "Dados em planilha, caderno e WhatsApp atrasam decisões e geram erro. Veja quanto a informação espalhada custa para a sua PME e como centralizar."
-date: 2026-12-14 08:00:00 -0300
+date: 2026-12-21 08:00:00 -0300
 categoria: gestao-e-indicadores
 image:
   path: /assets/img/blog/capa-gestao-e-indicadores.png

@@ -1,7 +1,7 @@
 ---
 title: "Quando a IA erra: limites e supervisão humana"
 description: "A IA pode errar e até inventar respostas. Entenda por que isso acontece, como reduzir o risco e como montar a supervisão humana na sua empresa."
-date: 2026-12-30 08:00:00 -0300
+date: 2027-01-06 08:00:00 -0300
 categoria: atendimento-e-ia
 image:
   path: /assets/img/blog/capa-atendimento-e-ia.png

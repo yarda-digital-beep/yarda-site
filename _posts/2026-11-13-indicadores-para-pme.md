@@ -1,7 +1,7 @@
 ---
 title: "Cinco indicadores que o dono de PME deve olhar toda semana"
 description: "Faturamento, caixa, conversão, ticket médio e tempo de resposta: os cinco indicadores que mostram a saúde da sua PME em 15 minutos por semana."
-date: 2026-11-06 08:00:00 -0300
+date: 2026-11-13 08:00:00 -0300
 categoria: gestao-e-indicadores
 image:
   path: /assets/img/blog/capa-gestao-e-indicadores.png

@@ -1,7 +1,7 @@
 ---
 title: "IA para pequenas empresas: por onde começar"
 description: "Como começar a usar inteligência artificial na sua PME sem gastar com a ferramenta errada: comece pelo gargalo, teste pequeno e meça o resultado."
-date: 2026-11-11 08:00:00 -0300
+date: 2026-11-18 08:00:00 -0300
 categoria: crescimento
 image:
   path: /assets/img/blog/capa-crescimento.png

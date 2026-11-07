@@ -1,7 +1,7 @@
 ---
 title: "ChatGPT ou IA na operação: qual é a diferença"
 description: "Usar o ChatGPT no celular ajuda, mas não é o mesmo que ter IA trabalhando na operação da empresa. Entenda a diferença e quando cada uma faz sentido."
-date: 2026-12-16 08:00:00 -0300
+date: 2026-12-23 08:00:00 -0300
 categoria: atendimento-e-ia
 image:
   path: /assets/img/blog/capa-atendimento-e-ia.png

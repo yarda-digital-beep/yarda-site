@@ -1,7 +1,7 @@
 ---
 title: "A IA vai substituir minha equipe? O que muda na rotina"
 description: "A inteligência artificial muda a rotina de quem atende e vende, mas não elimina a necessidade de pessoas. Veja o que muda na prática e como preparar a equipe."
-date: 2027-01-06 08:00:00 -0300
+date: 2027-01-13 08:00:00 -0300
 categoria: crescimento
 image:
   path: /assets/img/blog/capa-crescimento.png

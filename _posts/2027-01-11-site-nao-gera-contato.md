@@ -1,7 +1,7 @@
 ---
 title: "Site com visitas e sem contato: cinco pontos para revisar"
 description: "Seu site recebe visitas, mas quase ninguém entra em contato? Revise estes cinco pontos: mensagem, prova, chamada para ação, formulário e velocidade."
-date: 2027-01-04 08:00:00 -0300
+date: 2027-01-11 08:00:00 -0300
 categoria: vendas-e-crm
 image:
   path: /assets/img/blog/capa-vendas-e-crm.png

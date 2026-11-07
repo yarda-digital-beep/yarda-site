@@ -1,7 +1,7 @@
 ---
 title: "Retrabalho: como medir as horas que sua equipe perde"
 description: "Digitar a mesma informação em vários lugares custa mais do que parece. Veja como medir o retrabalho da sua equipe em uma semana e o que fazer com o resultado."
-date: 2026-12-07 08:00:00 -0300
+date: 2026-12-14 08:00:00 -0300
 categoria: processos-e-automacao
 image:
   path: /assets/img/blog/capa-processos-e-automacao.png

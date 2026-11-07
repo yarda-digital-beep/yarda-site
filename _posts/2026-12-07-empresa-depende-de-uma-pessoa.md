@@ -1,7 +1,7 @@
 ---
 title: "Sete sinais de que sua operação depende de uma pessoa só"
 description: "Quando o conhecimento fica preso numa pessoa, a empresa para junto com ela. Veja sete sinais desse gargalo e como começar a resolver sem perder ninguém."
-date: 2026-11-30 08:00:00 -0300
+date: 2026-12-07 08:00:00 -0300
 categoria: processos-e-automacao
 image:
   path: /assets/img/blog/capa-processos-e-automacao.png

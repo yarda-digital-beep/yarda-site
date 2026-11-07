@@ -1,7 +1,7 @@
 ---
 title: "Aqui sempre foi assim: como revisar um processo antigo"
 description: "Nem todo processo antigo está errado, mas alguns já não servem. Veja como avaliar um processo com cinco perguntas e mudar sem desvalorizar quem construiu."
-date: 2027-01-11 08:00:00 -0300
+date: 2027-01-18 08:00:00 -0300
 categoria: crescimento
 image:
   path: /assets/img/blog/capa-crescimento.png

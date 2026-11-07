@@ -1,7 +1,7 @@
 ---
 title: "Follow-up de vendas: quando e como retomar um orçamento"
 description: "Uma rotina de follow-up para retomar orçamentos sem parecer insistente: quando fazer cada contato, o que dizer e como organizar a cadência da equipe."
-date: 2026-11-19 08:00:00 -0300
+date: 2026-11-27 08:00:00 -0300
 categoria: vendas-e-crm
 image:
   path: /assets/img/blog/capa-vendas-e-crm.png
