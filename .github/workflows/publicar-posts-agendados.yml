@@ -1,0 +1,47 @@
+# Publica os posts agendados do blog.
+#
+# O Jekyll do GitHub Pages não publica posts com data futura (future: false),
+# então um post agendado só aparece no primeiro build depois da data dele.
+# Este workflow pede esse build todo dia útil às 8h15 (horário de Brasília),
+# mas só quando existe um post com a data de hoje em _posts/.
+#
+# Para publicar fora do horário, use "Run workflow" na aba Actions.
+name: Publicar posts agendados
+
+on:
+  schedule:
+    - cron: "15 11 * * 1-5"   # 11h15 UTC = 8h15 em Brasília
+  workflow_dispatch:
+    inputs:
+      forcar:
+        description: "Pedir o build mesmo sem post com a data de hoje"
+        type: boolean
+        default: false
+
+permissions:
+  contents: read
+  pages: write
+
+jobs:
+  publicar:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Procurar post com a data de hoje
+        id: hoje
+        run: |
+          hoje=$(TZ=America/Sao_Paulo date +%F)
+          if ls _posts/"$hoje"-*.md >/dev/null 2>&1; then
+            echo "Post de hoje: $(ls _posts/"$hoje"-*.md)"
+            echo "tem_post=true" >> "$GITHUB_OUTPUT"
+          else
+            echo "Nenhum post com a data $hoje."
+            echo "tem_post=false" >> "$GITHUB_OUTPUT"
+          fi
+
+      - name: Pedir novo build do GitHub Pages
+        if: steps.hoje.outputs.tem_post == 'true' || inputs.forcar
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: gh api -X POST "repos/${{ github.repository }}/pages/builds"
